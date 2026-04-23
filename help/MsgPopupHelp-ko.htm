@@ -1,0 +1,643 @@
+<html>
+
+<head>
+
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=EUC-KR">
+<title>MessagePopup II</title>
+<style fprolloverstyle>A:hover {color: #9CCF63}
+</style>
+<meta name="generator" content="Namo WebEditor(Trial)"></head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#FFCF00" vlink="#FFCF00" alink="#9CCF63" style="font-family: Georgia; font-size: 10 pt">
+
+<table border="0" cellpadding="0" cellspacing="0" style="font-size: 10 pt; border-collapse: collapse" bordercolor="#111111" width="984" height="6582">
+  <tr>
+    <td valign="top" colspan="3" width="975">
+    <p align="right"><br>
+    
+    
+            <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:20pt;"><b><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;메세지팝업 
+            II&nbsp;<font color="red">MessagePopup 
+            II Help Manual</font></i></b></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</td>
+    
+        <td width="9"></td>
+  </tr>
+    <tr>
+        <td width="125" valign="top" height="6497">
+            <p class="left">
+            <font color="#6699FF"><br><a href="#whatis">MessagePopup II 소개</a> 
+            &nbsp;&nbsp;&nbsp;&nbsp;<br><a href="#requirement">요구사항</a><br>
+   <a href="#howto">사용법</a><br>
+     <a href="#send">1</a>&nbsp;메세지 보내기<br>
+    <a href="#diary">2</a>&nbsp;일정관리<br><a href="#Alarm">3</a> 알람<br> <a href="#File">4</a> 
+            파일 전송<br>
+    </font><a href="#setup"><font color="#FFCC00">5</font></a><font color="#6699FF"> 설정 <br>
+    </font><a href="#ip"><font color="#FFCC00">6</font></a><font color="#6699FF"> IP<br>
+    </font><a href="#ETC"><font color="#FFCC00">7</font></a><font color="#6699FF"> ETC<br>
+    <br>
+    <a href="#trouble">문제해결<br>
+    </a></font></p>
+            <p class="left">
+<a href="#Language">언어지원</a></p>
+            <p class="left"> <a href="http://msgpopup.github.io/" target="_blank"><font color="#6699FF">HomePage</font></a></p>
+            <p class="left"><a href="mailto:msgpopup@empal.com"><font color="#6699FF">Send email</font></a>
+            
+            <p class="left"><a href="http://msgpopup.github.io/msgpopup_donate_kr.html"><font color="red">후원하기</font></a></p>
+        </td>
+    <td valign="top" width="7" height="6497">    
+            <p>&nbsp;</p>
+  </td>
+        <td valign="top" width="843" height="6497">
+            <p> <font color="blue" size="2"><span class="title"><b>메세지팝업 II 
+            </b></span></font><a name=whatis></a><b><font color="blue"><br>
+    </font></b><span lang=EN-US style="font-family:'Microsoft Sans Serif'; color:blue;"><font color="black">MessagePopup II 
+            는 LAN상에서 메세지 전송을 하는 무료 메신저입니다. <br>일단 설치만으로 같은 
+            LAN상에 메세지팝업이 설치된 컴퓨터들끼리 통신이 가능합니다. &nbsp;            <br>기본적으로는 메세지 전송을 주로 
+            하고, 파일 한개를 첨부해서 보낼 수 있습니다. 대화명도 바꿀 수 있으며 
+            그룹기능이 추가되어<br>그룹별로 리스팅할 수도 있습니다.<br>업무에 
+            편의를 위해 다이어리를 제공해 달력스타일의 다이어리에 업무정리를 
+            할 수 있고, 알람시간을 정해서 알람시간을 알려줍니다.<br>                                    &nbsp;            <br>
+ &nbsp;작은 회사나 사무실에 적합하며 대기업 메신저로는 부적합합니다.<br></font></span></p>
+            <p class="MsoNormal"><font color="blue" size="2"><b><span class="title">요구사항</span></b></font><a
+  name=requirement></a><font color="blue" size="2"><b><br></b></font><b><font color="blue">
+      </font></b><font color="#9CCF63">&nbsp;</font>OS: windows 95/98/Me/2000/XP/Vista/7/8/10와 이후 Windows (XP 이상 추천)<br>&nbsp;LAN card : TCP/IP protocol installed 
+            <br>
+ &nbsp;만약 동적 IP를 사용한다면 &nbsp;&nbsp;DHCP서버(공유기에도 포함됨)에 자신의 &nbsp;랜카드 MAC 주소를 고정 IP로 등록해 주세요. <br>&nbsp;해상도 : 최소 800 
+            X 600, (  1024 X 768 이상 추천).
+            </p>
+            <p><b><font color="red">윈도우즈 XP 이상의 사용자는 반드시 첫실행시 네트워크 접속  &nbsp;차단해제를 해주어야 합니다. <br>&nbsp;해제 안하면 사용자 목록 안뜹니다&nbsp;.&nbsp;<br>
+ &nbsp;<a href="#firewall">자세한&nbsp;사항</a>
+&nbsp; </font></b></p>
+            <p class="MsoNormal"><font color="blue" size="1"><b><span class="title">*&nbsp;설치시 
+            주의사항 *</span></b></font><font color="blue" size="2"><b><br></b></font><b><font color="blue">
+      </font></b><font color="#9CCF63">&nbsp;</font>이미 설치된 컴퓨터에 업그레이된 
+            버젼이나 재 설치를 할 경우 <br>&nbsp;첨부파일, 설정이나 로그파일들이 삭제되기를 
+            원치 않는다면, 시스템트레이 아이콘 오른클릭-&gt; 종료하기 후,<br>
+            &nbsp;설치파일을 설치하면 됩니다 (덮어쓰기).<br> &nbsp;Uninstall,을 하게 되면 
+            모든 로그 설정파일들이 완전삭제됩니다.(복구 불가)<br> &nbsp;다른 
+            컴퓨터에 이전하려면 일단 새컴퓨터에 설치한 후에 기존 컴퓨터의 C:\Program 
+            Files\MessagePopup방의 모든 파일들을<br> &nbsp;압축해서 카피한 후 
+            같은 방에 풀어서 덮어 버리면 됩니다. (            압축 풀 때 덮어쓰지 않고 서브폴더를 만들었는지 확인)<br></p>
+            <p><font color="blue" size="2"><span class="title"><b>사용 설명서</b></span></font><a name=howto></a><font color="blue" size="2"><b><br>
+   </b></font>메세지팝업은 프로그램이 시작시 같은 랜상에 메세지팝업이 설치된 
+            유저들을 자동으로 검색합니다.<br>또는,  <font color="red"><img src="img/img37s.bmp" width="34" height="26" border="0" alt="[CONN]"></font> 접속자 
+            검색버튼으로 새로 갱신할 때 사용자 검색을 합니다.<br>메세지를 받게 되면 
+            지정된 소리로 팝업창이 올라옵니다.<br>프로그램을 종료하려면, 시스템 
+            트레이 (시계옆) 아이콘을 오른클릭한 후 <font color="red">[종료하기]</font>를 
+            선택해서 종료합니다.<br>메세지팝업창을 핫키로 올리려면 <font color="red">[CTL+SHIFT]</font>를 
+            누릅니다. 한번더 누르면 사라집니다. 활성화 되어있으면 <font color="red"><br>[Esc]</font>키로 
+            내릴 수 있습니다. 또는 윈도우 기본 종료아이콘 클릭.<br>메세지가 왔을 때 
+            팝업이 되지 않기를 원하면 시스템&nbsp;트레이 아이콘을 오른클릭한 
+            후 <font color="red">[최소 아이콘화]</font>를 선택하면<br>팝업되지 
+            않고 최소아이콘창이 &nbsp;깜박입니다. <br>최소 아이콘도 원치 않으면 
+            <font color="red">[팝업 않기]</font>를 선택하면 시스템 트레이 아이콘만 
+            깜박입니다.<br>&nbsp;<br>이 메뉴얼을 보려면<font color="red">[F1] 
+            </font><font color="black">키를 누르거나,</font> &nbsp; &nbsp;<img src="img/img39.bmp" width="22" height="26" border="0" alt="[About]"> 를 클릭하고 Help를 누르세요</p>
+            <p>개발자 후기:<br>                                     작은 프로그램이지만 많은 사람들이 유용하게 사용하면 좋겠습니다.<br>그리고 특별히 그래픽 아이콘에 
+            도움을 준 저의 사랑하는 동생에게 정말 감사하며, 저의 사랑하는 
+            가족과 많은 사용자들과 <br>조언을 아끼지 않는 모든 분들께 감사드립니다. 
+            메세지팝업이 사용하시는 모든 분들의 하시는 일에 조금이나마 도움을<br>주었으면 
+            합니다. 모든 분들에게 행운을 빌며(^0^)~♣<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제작자
+
+            박태준&nbsp;꾸벅 m(_ _)m</p>
+            <table border="0" cellpadding="5" cellspacing="0" style="font-size: 10 pt; border-collapse: collapse" bordercolor="#111111" width="846" height="4244">
+                <tr>
+                    <td width="91" valign="top" class="option" height="316" rowspan="2" colspan="2" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;"><font color="black"><b>메세지</b></font><b><span lang=EN-US style="font-family:'Microsoft Sans Serif'; color:rgb(51,102,255); mso-fareast-font-family:諛�?�;
+mso-font-kerning:1.0pt;mso-ansi-language:EN-US;mso-fareast-language:KO;
+mso-bidi-language:AR-SA"><font color="black"> </font></span></b><font color="black"><b><a
+    name=send></a></b></font><b><span lang=EN-US style="font-family:'Microsoft Sans Serif'; color:rgb(51,102,255); mso-fareast-font-family:諛�?�;
+mso-font-kerning:1.0pt;mso-ansi-language:EN-US;mso-fareast-language:KO;
+mso-bidi-language:AR-SA"><font color="black"><br>보내기<br><img src="img/img19s.bmp" width="32" height="36" border="0" alt="[Send]"><br></font></span></b></td>
+                    <td class="descr" width="732" height="149" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>1. 접속자 목록창에서 수신인들을 선택합니다. (Ctrl또는 
+                        Shift키로 다중선택가능 , 드래그 선택가능)<br>&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/img47.bmp" width="22" height="26" border="0" alt="[Down Arrow]">
+                        또는 엔터키를 누르면, 받는이들목록창에 입력됩니다. <br>
+                        &nbsp;&nbsp;&nbsp;접속자 목록에 나타난 모든이들을 선택하려면, 
+                        <img src="img/img96.bmp" width="22" height="26" border="0" alt="[Down two Arrow]">
+                        를 누르거나 오른클릭 후 <font color="red">[모두-&gt;받는이목록]<br>
+                        &nbsp;&nbsp;&nbsp;</font><font color="black">을 선택하면 
+                        됩니다.</font> </p>
+                        <p>2. 받는이 목록창 옆에 있는 보내는 글쓰기 창에 글을 
+                        쓴 후 </p>
+                        <p>3.  <img src="img/img19s.bmp" width="32" height="36" border="0" alt="[Send]">또는 [<font color="red">CTL+S] 
+                        </font><font color="black">를 누르면 메세지가 전송됩니다.</font></p>
+                        <p><font color="black">&nbsp;</font></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="descr" width="732" height="165" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>&nbsp; 받은 메세지의 보낸이에 답장하려면 <img src="img/img41.bmp" width="34" height="26" border="0" alt="[Reply]">을 
+                        누르고 글쓴 후 보냅니다.<br>&nbsp;&nbsp;받은 메세지의 
+                        같이 받은이들 모두와 보낸이에 답장하려면 <img src="img/img92.bmp" width="34" height="26" border="0" alt="[Reply All]">
+                        를 선택 후 글쓴 후 보냅니다.<br>&nbsp;&nbsp;받은들을 
+                        다른사람에게 전달하려면 <img src="img/img43.bmp" width="41" height="26" border="0" alt="[F.W]">을 
+                        선택한 후 글을 적은 후 받는이들을 선택 후 보냅니다.<br>&nbsp; 보내는 
+                        글창의 글을 없애고 새글을 적으려면,  
+                        <font color="red"><img src="img/img21.bmp" width="32" height="36" border="0" alt="[New]"></font> 또는 <font color="red">[CTL+N]</font><font color="black">를 
+                        선택합니다</font>.<br>&nbsp;&nbsp;받은 메세지와 보낸 
+                        메세지의 최대 저장 수는  30개 입니다<br>&nbsp;&nbsp;30이상으로 
+                        들어오면 가장 오래된 글부터 차례로 자동 삭제됩니다.<br>&nbsp;&nbsp;30개의 
+                        수량을 수정하려면,  <img src="img/img35.bmp" width="22" height="26" border="0" alt="[Gear]"><font color="red"> </font>설정창<font color="red"> 
+                         
+                        [소리,로그]</font>탭에서 수정가능합니다.<br> &nbsp;&nbsp;기본적으로 
+                        Send 버튼 누른 후 받는이들 목록은 삭제됩니다. <br> &nbsp;&nbsp;삭제되                        는 것을 원치 않으면<a name="noCLR"> <font color="red"><img src="img/img88.bmp" width="22" height="26" border="0" alt="[NO CLR]"></font> 를 
+                        클릭합니다</a>. 같은 받는 이들과 연속으로 대화 할 때 
+                        유용합니다.<br> &nbsp;&nbsp;프로그램 시작시 이 기능을 
+                        기본적으로 사용하려면 ,  <img src="img/img35.bmp" width="22" height="26" border="0" alt="[Gear]"><font color="red"> </font><font color="black">를 
+                        누른 후</font><font color="red"> [시작 핫키]</font><font color="black">탭에서</font><font color="red"> 
+                        </font>,<br> &nbsp;&nbsp;[No CLR] 옵션에 체크해 둡니다.</p>
+                        <p>&nbsp;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="91" valign="top" class="option" height="251" rowspan="2" colspan="2" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p><b>일정관리</b><a
+    name=diary></a><br><img src="img/img31.bmp" width="22" height="26" border="0" alt="[Calendar]"> &nbsp;</p>
+                    </td>
+                    <td class="descr" width="732" height="117" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>1.  <img src="img/img31.bmp" width="22" height="26" border="0" alt="[Calendar]"> 클릭.</p>
+                        <p>2. 각각의 날짜를 누르면 글을 입력할 수 있습니다. 
+                        <br> &nbsp;&nbsp;(이후 이 글이 있으면 프로그램 시작시 
+                        오늘의 글창에 이 내용이 보여집니다)</p>
+                        <p>3. 기념일 입력 <br> &nbsp;&nbsp;&nbsp;<font color="red">[MyDay] </font>버튼을 
+                        눌러서 매해 같은 날 (생일, 각종 제사, 기념일 등)을 입력할 
+                        수 있습니다.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="descr" width="732" height="134" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>&nbsp;&nbsp;* &nbsp;휴일도 표시되며 휴일이 바뀔 경우 
+                        holiday.txt를 수정하여 주십시요. <br> &nbsp;&nbsp;&nbsp;(메세지팝업 
+                        기본폴더&nbsp;&nbsp;C:\Program Files\MessagePopup\date\holiday.txt)<br>&nbsp;<br>
+                        음;0000;01;03;테스트날;1; &nbsp;에서 <br>&nbsp;&nbsp;음 
+                        = 음 또는 양<br> &nbsp;&nbsp;&nbsp;01;03=&nbsp;01월 
+                        03일 <br> &nbsp;&nbsp;테스트날= 날의 명칭<br> &nbsp;&nbsp;1= 
+                        빨강날 (아니면 0)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="91" valign="top" class="option" colspan="2" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p><b>알람</b><a
+    name=Alarm></a><br><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang"><img src="img/img33.bmp" width="22" height="26" border="0" alt="[alarm]"></SPAN>&nbsp;</p>
+                    </td>
+                    <td class="descr" width="732" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p><SPAN lang=EN-US style="mso-fareast-font-family: Batang">1.  </SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang"><img src="img/img33.bmp" width="22" height="26" border="0" alt="[alarm]"></SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang">  를 
+                        클릭 후 알람시간을 입력하고 + 를 클릭합니다.<br> </SPAN></p>
+                        <p><SPAN lang=EN-US style="mso-fareast-font-family: Batang">&nbsp;2.</SPAN><SPAN 
+lang=EN-US 
+style="FONT-FAMILY: 'Microsoft Sans Serif'; mso-fareast-font-family: 9YEA; mso-font-kerning: 1.0pt"><font color="red"> [소리설정</font>]탭에서 
+                        </SPAN>, 소리 파일을 설정하고 소리나는 방식을 선택할 
+                        수 있습니다. &nbsp;</p>
+                        <p>&nbsp;3.<font color="red"> [인터넷과 컴퓨터시간동기화</font>]탭에서 
+                        , 세계 타임 서버를 선택한 후 동기화를 하면 컴퓨터시간을<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;자동으로 맞춰 줍니다. 
+                         </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="91" valign="top" class="option" height="214" colspan="2" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p><b>파일 전송</b><a
+    name=File></a><br><img src="img/img45.bmp" width="22" height="26" border="0" alt="[Clip]">&nbsp;</p>
+                    </td>
+                    <td class="descr" width="732" height="214" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">1. 받는이들을 
+                        선택하고 글을 적습니다.
+                        <p>2.  <img src="img/img45.bmp" width="22" height="26" border="0" alt="[Clip]">  를 
+                        클릭한 후 전송하고자 하는 파일을 선택합니다. &nbsp;<br> &nbsp;&nbsp;&nbsp;&nbsp;또는 Drag &amp; Drop으로 
+                        파일 한개를 메세지팝업 창에 떨어뜨립니다.</p>
+                        <p>3. 파일이 첨부되면 , <img src="img/img45.bmp" width="22" height="26" border="0" alt="[Clip]">
+                         색이  <img src="img/img63.bmp" width="22" height="26" border="0" alt="[Red Clip]">로 
+                        변합니다.<br> &nbsp;&nbsp;&nbsp;&nbsp;( 파일 첨부 취소하려면 
+                        하단의 파일명 옆의 <font color="red">[X]</font>버튼으로 
+                        취소합니다.)</p>
+                        <p>4.  <img src="img/img19s.bmp" width="32" height="36" border="0" alt="[Send]">  를 
+                        클릭하면 메세지 전송과 함께 파일이 전송됩니다.</p>
+                        <p>5. 받은 파일은  C:\Program Files\MessagePopup\down 
+                        에 저장됩니다.<br> &nbsp;&nbsp;&nbsp;&nbsp;경로를 바꾸려면 
+                        다운경로설정 탭에서 변경하세요. 
+                        </p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;받은 첨부파일 여는 
+                        방법<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) <font color="red">[Clip]</font>버튼을 
+                        누른 후, <font color="red">[Goto Down DIR]</font>을 누르면 
+                        다운방이 열립니다.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2)&nbsp;또는 
+                        보내는 글 창 위의 파란바를 클릭하면 다운방이 열립니다.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) 
+                        또는 보내는 글창에서 오른클릭 후  <font color="red">[Open explorer]</font><font color="black">를 
+                        선택하면 다운방이 열립니다</font><font color="red">.</font><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) 또는 받은 글창에서 
+                        받은 글에 첨부파일이 있으면 받은글창 위의 파란바를 클릭하면 
+                        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;첨부파일이 
+                        실행됩니다. 첨부파일 없으면 다운방이 열립니다. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;받은 
+                        글창에서 오른클릭 후  <font color="red">[Open explorer]</font><font color="black">를 
+                        선택하면 첨부파일이 열리거나 없으면 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;다운방이 
+                        열립니다.</font></p>
+                        <p>&nbsp;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="32" valign="top" class="option" height="1014" rowspan="6" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p><a name="setup"></a><br><B><SPAN lang=EN-US style="mso-fareast-font-family: Batang">Setup<br></SPAN></B><img src="img/img35.bmp" width="22" height="26" border="0" alt="[Setup]">
+                        &nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </td>
+                    <td width="48" valign="top" class="option" height="185" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>네트워크 Tab</p>
+                    </td>
+                    <td class="descr" width="732" height="185" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>1. 다른 네트워크 <br> &nbsp;&nbsp;&nbsp;&nbsp;My 
+                        Network 와 다른 네트워크의 주소의 사용자들과 통신하기 
+                        위해서는 다른 네트워크 앞세자리 주소를 입력합니다.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;자신과 같은 네트워크는 적을 
+                        필요없음. 기본적으로 검색함.<br> &nbsp;&nbsp;&nbsp;(메세지 
+                        팝업이 인식하는 같은 네트워크는 IP의 앞 &nbsp;세개의 자리를 
+                        같은 네트워크로 인식합니다. )<br> &nbsp;&nbsp;&nbsp;&nbsp;다른 
+                        네트워크의 상대방도 내 네트워크를 다른 네트워크 주소에 
+                        입력해야 해야 서로 원활한 통신이 가능)</p>
+                        <p>2. 그룹명 , 대화명<br> &nbsp;&nbsp;&nbsp;&nbsp;그룹명과 
+                        대화명을 변경할 수 있습니다.<br> &nbsp;&nbsp;&nbsp;&nbsp;그룹명은 
+                        기본적으로 입력안해도 됩니다. <br> &nbsp;&nbsp;&nbsp;&nbsp;그룹명을 
+                        입력하면 접속자목록창위의 콤보박스에서 그룹명별로 분류가 
+                        가능합니다.<br></p>
+<SPAN 
+lang=EN-US 
+style="FONT-FAMILY: 'Microsoft Sans Serif'; mso-fareast-font-family: 9YEA; mso-font-kerning: 1.0pt">3. 
+                        통신 그룹 
+                        <br> &nbsp;&nbsp;&nbsp;같은 LAN상에 서로 목록창에 보이지 
+                        않기 원하는 사용자들이 있을 경우 자신이 원하는 사용자들만<br>
+                        &nbsp;&nbsp;&nbsp;같은 통신 그룹으로 설정해서, 같은 
+                        그룹들끼리만 보이게 설정합니다.<br> &nbsp;&nbsp;&nbsp;기본 
+                        그룹은 모두 A 그룹이므로 통신하길 원하는 사람들은 B그룹을 선택하면 B로 설정한 사람들만 보입니다</SPAN></td>
+                </tr>
+                <tr>
+                    <td width="48" valign="top" class="option" height="80" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>색상,폰트<br>Tab</p>
+                    </td>
+                    <td class="descr" width="732" height="80" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>&nbsp;1.  컴목록창(접속자목록과 받는이 목록창)과 
+                        글창(받은글과 보낸글창)의 색상과 폰트 색을 바꿀 수 있습니다.  .<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;또는 
+                        기본색 1.2.3.4 중 원하는 색을 선택할 수 있습니다.</p>
+                        <p>&nbsp;2. 폰트 크기는 글창의 폰트크기의 설정을 합니다.</p>
+                        <p>&nbsp;3. 폰트언어을 설정합니다.(기본은 Default이며 
+                        윈도우즈 기본폰트설정을 이용합니다.) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일반적으로 
+                        설정을 요하지 않음&nbsp; </p>
+                        <p>&nbsp;4. 목록창의 폭을 조절한 후  <SPAN lang=EN-US style="COLOR: #ff6600"><font color="red">[</font></SPAN><font color="red">목록창 
+                        폭 저장</font><SPAN lang=EN-US style="COLOR: #ff6600"><font color="red">] 
+                        </font></SPAN>을 누르면 프로그램 시작시 폭크기 저장되어 
+                        시작합니다.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;또는 
+                        접속자 목록창에서 오른클릭 후 <font color="red">[목록창 
+                        폭 저장]</font> 을 선택한다.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="48" valign="top" class="option" height="16" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>소리,로그<br>Tab</p>
+                    </td>
+                    <td class="descr" width="732" height="16" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>&nbsp;1, 메세지가 왔을 때 소리가 안나게 하기 위해 체크박스에 
+                        체크하세요<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소리를 
+                        변경하기 위해서 원하는 소리를 선택하세요</p>
+                        <p>&nbsp;2. 기본적으로 보내고 받는 메세지의 최대&nbsp;저장 수는 
+                        30개입니다. &nbsp;원하면 그 수를 변경합니다.</p>
+                        <p>&nbsp;3.  <font color="red">[로그방으로가기] 
+                        </font>or <font color="red">[Find in  Log DIR]</font>.로 
+                        로그파일 방으로 갈수도 있고,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;로그파일 
+                        중에서 찾는 글을 찾을 수 있습니다.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; 모든 로그를 삭제하려면  <font color="red">[로그모두삭제를</font> 
+                        눌러주세요.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="48" valign="top" class="option" height="21" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>암호<br>Tab<br>                        </p>
+                    </td>
+                    <td class="descr" width="732" height="4" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;만일 자신이 자리를 
+                        비웠을때 남이 메세지팝업을 클릭해서 바로 볼 우려가 있을 
+                        경우 여기서 암호를 설정한 후<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;시스템 
+                        트레이 아이콘 오른클릭 후&nbsp; <font color="red">[암호 
+                        걸기]</font> 를 선택하면 트레이 아이콘을 클릭하면 암호를 
+                        묻습니다.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red">[암호 
+                        걸기]</font> 를 해제하려면<font color="red">[암호 걸기]</font>를 
+                        한번 더 클릭합니다.<br></p>
+                        <table border="0" cellpadding="5" cellspacing="0" style="font-size: 10 pt; border-collapse: collapse" bordercolor="#111111" width="712">
+                            <tr>
+                                <td class="descr" width="602" height="27">
+                                    <p>*<br>암호를 잃어버리면, 프로그램을 새로 
+                                    시작하고 암호를 새로 설정하세요.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="48" valign="top" class="option" height="122" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>시작,<br> 핫키<br>Tab</p>
+                    </td>
+                    <td class="descr" width="732" height="244" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>1. 프로그램 시작 옵션<br>&nbsp;&nbsp;시작시 <a href="#IconWin">최소화, 
+                        팝업않기, 최소화 아이콘 기능</a>을 설정할 수 있습니다.<br>
+                        &nbsp;&nbsp;이 기능은 트레이 아이콘 오른클릭 메뉴에서 
+                        일시적으로 설정할 &nbsp;수 있으나 시작시 기본동작하게 합니다.</p>
+                        <p>&nbsp;2.핫키 (팝업창 올리고 내리는 키)<br>&nbsp;&nbsp;핫키기능을 
+                        사용 해제할 수도 있고, 키를 변경할 수 있습니다. &nbsp;</p>
+                        <p>3. <a href="#noCLR">[No CLR]</a> <img src="img/img88.bmp" width="22" height="26" border="0" alt="[NO CLR]">
+                        버튼을 시작시 작동시킵니다..<br></p>
+                        <p style="text-indent:-12pt; margin-left:12pt;"><SPAN lang=EN-US style="mso-fareast-font-family: Batang">4. Enter &amp; Send<br>보내는 
+                        글창에서 글을 쓴 후 엔터키를 쳐서 바로 메세지 전송을 
+                        원하면<BR>보내는 글창에서 오른클릭 후 </SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">[Enter&amp;Send].</SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang"> 를 
+                        선택합니다..<BR> 이 기능을 시작시부터 사용하려면 </SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">[시작시 Enter &amp; 
+Send 작동] <font color="black">에 체크합니다.</font></SPAN></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="48" height="68" valign="top" class="option" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>다운폴더</p>
+                    </td>
+                    <td width="732" height="68" class="descr" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">첨부파일 다운로드되는 폴더를 선택합니다 <br>
+(기본폴더 : &nbsp;MessagePopup folder\down)</td>
+                </tr>
+                <tr>
+                    <td width="91" valign="top" class="option" rowspan="2" colspan="2" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p><b><a name="ip"></a>IP사용자에게<br>IP로 직접 보내기</b></p>
+                    </td>
+                    <td class="descr" width="732" height="159" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>1.  <font color="red"><img src="img/img51.bmp" width="22" height="26" border="0" alt="[IP]">
+                        </font><font color="black">클릭. 이 기능은 IP로 상대에 
+                        보낼 때 사용합니다. 다른 네트워크에 있는데 다른 네트워크 
+                        설정을<br> &nbsp;&nbsp;&nbsp;할 경우 그 네트워크 모든 
+                        사람이 읽혀집니다. 그렇지 않고 해당 사용자만 검색을 
+                        원하면 여기에 설정합니다.<br> &nbsp;&nbsp;&nbsp;해당 
+                        IP 유저만 검색합니다.<br>&nbsp;</font></p>
+                        <p>2. 상대의 IP와 이름 입력합니다.</p>
+                        <p>3.  <font color="red">[+]</font>&nbsp;를 눌러서 리스트를 
+                        만들고 리스트에서 선택 후 <font color="red">[선택한 이들을 
+                        받는이 목록에 추가]</font> 버튼 누름.</p>
+                        <p>4. IP방식으로 메세지를 받으면  (보낸이 앞에 @가 표시),<br>&nbsp;&nbsp;&nbsp;<font color="red">[IP]</font> 클릭 
+                        후 [-&gt;] 를 누르면 해당 IP를 뽑아 냅니다.<br> &nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="descr" width="732" height="23" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>* IP기능은 먼 internet 사용자에게 전송된다는 보장은 
+                        없습니다. 인터넷 세상에서 막힐 수도 있습니다.<br> &nbsp;&nbsp;이 기능은 
+                        랜상에 다른 네트워크에 접속할 때 필요시 이용합니다.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="91" valign="top" class="option" colspan="2" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p><b>기타 기능<a name="ETC"></a></b></p>
+                        <p>&nbsp;</p>
+                    </td>
+                    <td class="descr" width="732" style="border-width:1; border-color:rgb(204,204,204); border-style:dotted;">
+                        <p>1. <img src="img/img37s.bmp" width="34" height="26" border="0" alt="[Connection Refresh]"> 접속자 
+                        리스트 갱신 <br> &nbsp;&nbsp;&nbsp;&nbsp;사용자가 팝업을 
+                        비정상 종료한다든지 윈도우를 강제 전원 종료하거나 랜케이블 
+                        뽑힌 상태에서 종료시<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;리스트가 
+                        갱신이 안됩니다. 이 경우 이 버튼을 눌러서 수동으로 현재 
+                        리스트를 다시 검색합니다.</p>
+                        <p>2. <img src="img/img56.bmp" width="34" height="26" border="0" alt="[Group]">
+                        그룹 저장 : 받는이 목록에 있는 이들을 그룹으로 저장.<br>&nbsp;&nbsp;&nbsp;</p>
+                        <p>3. <img src="img/img58.bmp" width="34" height="26" border="0" alt="[Load Group]">
+                        그룹 호출: 저장된 그룹의 목록을 받는이 목록으로 호출합                        니다.<br> </p>
+                        <p>4. <img src="img/img71.bmp" width="22" height="26" border="0" alt="[Auto Forward Memo]"> 자동 
+                        전송: 클릭 후 보낼 글을 적습니다.<br>&nbsp;&nbsp;&nbsp;메세지를 
+                        받으면, 보낸이에게 적혀진 글이 자동으로 전송됩니다.</p>
+                        <p>5. <a name="absent"></a><img src="img/img67.bmp" width="22" height="26" border="0" alt="[Absent]">
+                        자리 비움: &nbsp;이 기능을 설정해 두면, 메세지를 받으면 
+                        자리를 비웠다는 메세지를 보낸이에게 <br> &nbsp;&nbsp;&nbsp;&nbsp;자동 
+                        전송합니다.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;한번 더 
+                        클릭하거나 메세지를 전송하게 되면 자동으로 기능이 취소됩니다. </p>
+                        <p><a name="IconWin">6. 최소 아이콘 :</a><br>&nbsp;&nbsp;&nbsp;메세지가 
+                        왔을 때 팝업이 되지 않기를 원하면 시스템&nbsp;트레이 
+                        아이콘을 오른클릭한 후 <font color="red">[최소 아이콘화]</font>를 
+                        선택하면<br> &nbsp;&nbsp;&nbsp;팝업되지 않고 최소아이콘창이 
+                        &nbsp;깜박입니다. <br> &nbsp;&nbsp;&nbsp;<img src="img/img35.bmp" width="22" height="26" border="0" alt="[Setup]">기어설정에서 
+                        시작탭에서 시작시 이 기능을 작동하게 할 수 있습니다.</p>
+                        <p>7. 팝업않기 <br> &nbsp;&nbsp;&nbsp;&nbsp;메세지가 
+                        왔을 때 팝업이 되지 않기를 원하고 최소 아이콘도 원치 
+                        않으면, <br> &nbsp;&nbsp;&nbsp;&nbsp;시스템&nbsp;트레이 
+                        아이콘을 오른클릭한 후 <font color="red">[팝업 않기]</font>를 
+                        선택하면 메세지가 왔을 때 시스템 트레이 아이콘만 깜박입니다.</p>
+                        <p>6. 원클릭 간단한  메세지&nbsp;:안녕, 감사 ,Yes, No, 
+                        Ok ,잠시 button </p>
+                        <p>8. <img src="img/img17.bmp" width="32" height="17" border="0" alt=" [MY]"> 나의 
+                        메세지 : <br>&nbsp;&nbsp;&nbsp;&nbsp;자주 사용하는 메세지를 
+                        저장해 주었다가 사용할 수 있습니다. <br>&nbsp;&nbsp;&nbsp;&nbsp; 글을 
+                        적고  <font color="red">[+] </font><font color="black">클릭으로 
+                        리스트 작성 후 원하는 글을 더블 클릭하면 보내는 글창에 
+                        입력됩니다.</font><br>&nbsp;&nbsp;&nbsp;<font color="red"> </font><font color="black">또는</font><font color="red"> 
+                        [선택된글 입력] 
+                        </font><font color="black">을 클릭합니다.</font> </p>
+                        <p>&nbsp;&nbsp;* 1 ~ 9 번 메세지는[CTL 
+                        +1] ~ [CTL +9] 키로 보내는 글창에 입력가능합니다.</p>
+                        <p>9. <img src="img/img98.bmp" width="32" height="17" border="0" alt="[Special Char]"> 특수 
+                        문자표, 이모티콘 표<br> &nbsp;&nbsp;&nbsp;특수 문자나 
+                        이모티콘을 선택해서 더블클릭하면 보내는 글창에 입력됩                        니다.<br> &nbsp;&nbsp;&nbsp;윈도우에 따라 폰트가 틀려서 
+                        특수문자가 표시 안될 수 있음.</p>
+                        <p>10. <img src="img/img49.bmp" width="22" height="26" border="0" alt="[Find Com]">
+                        컴이름 찾기 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;같은 
+                        네트워크에 존재하는 컴을 찾아서 사용자 이름을 찾아 받는이에 
+                        추가합니다.<br> </p>
+                        <p>11. <img src="img/img75.bmp" width="22" height="26" border="0" alt="[Pin]">
+                        현재 메세지 고정<br>&nbsp;&nbsp;받은 메세지가 길어서 
+                        이 글을 읽고 있는데 새 메세지가 들어와서 글이 바뀌는 
+                        것을 방지하기 위해<br>&nbsp;&nbsp;이 버튼을 사용합니다.</p>
+                        <p>12. <img src="img/img94.bmp" width="22" height="26" border="0" alt="[extract recipients]">
+                        &nbsp;보냈던 글의 같이 받은이들에게 글을 보내길 원할때, 
+                        이 버튼을 클릭하면 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;보냈던 
+                        글에 있던 같이 받은이들이 받는이 목록으로 입력됩니다. </p>
+                        <P 
+style="MARGIN-LEFT: 12pt; TEXT-INDENT: -12pt; mso-char-indent-count: -1.0; mso-char-indent-size: 12pt"><SPAN lang=EN-US style="mso-fareast-font-family: Batang">13. Enter &amp; Send<br>보내는 
+                        글창에서 글을 쓴 후 엔터키를 쳐서 바로 메세지 전송을 
+                        원하면<BR>보내는 글창에서 오른클릭 후 </SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">[Enter&amp;Send].</SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang"> 를 
+                        선택합니다..<BR> 이 기능을 시작시부터 사용하려면 </SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">[시작시 Enter &amp; 
+Send 작동] <font color="black">에 체크합니다.</font></SPAN></P>
+                        <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="mso-bidi-font-family: 'Microsoft Sans Serif'">14. <SPAN 
+style="mso-bidi-font-weight: bold">Open Explorer<br> &nbsp;&nbsp;&nbsp;보내고 
+                        받는 글창에서  오른클릭 메뉴에서</SPAN></SPAN><SPAN lang=EN-US style="COLOR: red">[Open 
+Explorer]</SPAN><SPAN lang=EN-US 
+style="mso-bidi-font-family: 'Microsoft Sans Serif'"><SPAN 
+style="mso-spacerun: yes">&nbsp; 를 선택하면 다운방이 열립니다.<br></SPAN> &nbsp;&nbsp; 
+                        또는 받은글창 위&nbsp;</SPAN> <font color="red">[파란바]</font> 를 
+                        클릭해도 다운방이 열립니다. 첨부파일있으면 첨부파일 
+                        열림.<br><SPAN lang=EN-US 
+style="mso-bidi-font-family: 'Microsoft Sans Serif'"> &nbsp;&nbsp;&nbsp;보내는 
+                        글창 위 </SPAN><font color="red">[파란바]</font> 를 
+                        클릭해도 다운방이 열립니다.<br> &nbsp;&nbsp;&nbsp;글 중에 
+                        인터넷 주소가 있을 경우 마우스로 긁어서 선택 후 <SPAN lang=EN-US 
+style="mso-bidi-font-family: 'Microsoft Sans Serif'"><SPAN 
+style="mso-bidi-font-weight: bold">오른클릭 메뉴에서</SPAN></SPAN><SPAN lang=EN-US style="COLOR: red">[Open 
+Explorer]<br> &nbsp;&nbsp;&nbsp;<font color="black">를 선택하면 인터넷 익스플로러가 
+                        주소를 엽니다.</font></SPAN><SPAN lang=EN-US 
+style="mso-bidi-font-family: 'Microsoft Sans Serif'"><br></SPAN></P>
+                        <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN lang=EN-US 
+style="mso-bidi-font-family: 'Microsoft Sans Serif'">15. 첨부파일 열기 <SPAN 
+style="mso-bidi-font-weight: bold"><br> &nbsp;&nbsp;&nbsp;받은들창에서 오른클릭 
+                        메뉴에서</SPAN></SPAN><SPAN lang=EN-US style="COLOR: red">[첨부파일 
+                        열기]</SPAN><SPAN lang=EN-US 
+style="mso-bidi-font-family: 'Microsoft Sans Serif'"><SPAN 
+style="mso-spacerun: yes">&nbsp; 를 선택하면 첨부파일이 있으면 첨부파일이 열리고,<br>
+                        &nbsp;&nbsp;없으면&nbsp;다운방이 열립니다. </SPAN><SPAN 
+style="mso-bidi-font-weight: bold"><br> &nbsp;&nbsp;&nbsp;</SPAN>받은글창 위&nbsp;</SPAN> <font color="red">[파란바]</font> 를 
+                        클릭해도 다운방이 열립니다. 첨부파일있으면 첨부파일 
+                        열림.<br><SPAN lang=EN-US 
+style="mso-bidi-font-family: 'Microsoft Sans Serif'"> &nbsp;&nbsp;&nbsp;보내는 
+                        글창 위 </SPAN><font color="red">[파란바]</font> 를 
+                        클릭해도 다운방이 열립니다.<br><br>16. <font color="red"><span class="MsoNormal">[지구아이콘                        ] </span></font>을 클릭하면 현재는 메세지팝업 홈으로 이동합니다.<br>
+                        &nbsp;&nbsp;&nbsp;이 주소를 원하는 주소로 바꾸려면 
+                        지도 오른 클릭 후 인터넷 주소를 입력합니다. <br> &nbsp;&nbsp;아무 것도 
+                        적지 않으면 클릭시 다운방이 열립니다.</P>
+                        <P class=MsoNormal style="mso-layout-grid-align: none">17. 첨부파일 다운폴더 열기<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;받은 메시지창 위에 <font color="red"><span class="MsoNormal">&nbsp;[폴더아이콘                        ] </span></font>을 클릭하면 첨부파일 폴더가 열립니다.&nbsp;&nbsp;</P>
+                        <P><SPAN lang=EN-US style="mso-fareast-font-family: Batang">18. 보내는 창에서 
+                        오른크릭하면 메뉴에서 단축키 목록이 나옵니다. 이 기능을 
+                        사용해서 단축키도 가능합니다.<br> &nbsp;&nbsp;&nbsp;Key 
+Summary<BR></SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">&nbsp;[CTL + Shift]</SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang">Pop Up/</SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang"> </SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang">Pop Down<BR></SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">&nbsp;[Ctl + S] 
+&nbsp;</SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang">Send<BR>&nbsp;</SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">[Ctl + N] &nbsp;</SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang">New<BR>&nbsp;</SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">[Ctl + R] 
+&nbsp;</SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang">Reply<BR>&nbsp;</SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">[Ctl + L] &nbsp;</SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang">Reply All<BR>&nbsp;</SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">[Ctl + 
+F]</SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang"> &nbsp;Forward 
+<BR>&nbsp;</SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">[Ctl + U] </SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang">&nbsp;Attach(Upload 
+File)<BR>&nbsp;</SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">[Ctl + 1] - &nbsp;[Ctl + 9] 
+&nbsp;</SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang">MyMsg 1 &ndash; 
+9<BR><SPAN style="mso-spacerun: yes">&nbsp;</SPAN></SPAN><SPAN lang=EN-US 
+style="COLOR: red; mso-fareast-font-family: Batang">[Ctl + E] </SPAN><SPAN lang=EN-US style="mso-fareast-font-family: Batang">&nbsp;Enter&amp;Send</SPAN></P>
+                    </td>
+                </tr>
+            </table>
+            <p><span class="title"><font color="blue" size="2"><b>문제 해결</b></font></span><a name=trouble></a><b><font color="blue"><br>
+      </font></b></p>
+            <table border="0" cellpadding="5" cellspacing="0" style="font-size: 10 pt; border-collapse: collapse" bordercolor="#111111" width="820" height="1105">
+      
+                <tr>
+                    <td width="10%" valign="top" class="option" style="border-right-width:1; border-bottom-width:1; border-right-color:rgb(153,153,153); border-bottom-color:rgb(153,153,153); border-right-style:dotted; border-bottom-style:dotted;"><b>Network 설정</b></td>
+                    <td class="descr" width="718" style="border-bottom-width:1; border-left-width:1; border-bottom-color:rgb(153,153,153); border-left-color:rgb(153,153,153); border-bottom-style:dotted; border-left-style:dotted;">
+                        <p>같은 LAN상에 다른 네트워크 (앞 세자리 X.X.X 가 다른 
+                        경우)<br></p>
+                        <p>example&gt;<br>당신의 컴퓨터A = 10.10.10.2<br>같은 
+                        네트워크 컴퓨터 B = 10.10.10.3<br>다른 네트워크 컴퓨터 
+                        C,D = 10.10.20.3 , 10.10.20.4<br> 다른 네트워크 컴퓨터들S 
+                        = 10.10.30.1 ~10.10.30.254<br></p>
+                        <p>1)먼저 ping 테스트로 통신가능한지를 확인합니다.<br>
+                        &nbsp;&nbsp;&nbsp;도스 command창에서 <br> &nbsp;&nbsp;&nbsp;C:&gt; ping 10.10.20.3  <br>
+                        &nbsp;&nbsp;&nbsp;C:&gt; ping 10.10.30.1 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;를 
+                        해서 reply가 오면 통신이 되는 것으로 간주합니다<br><br>2) 현재 
+                        다른 네트워크가 10.10.20.X 와 10.10.30.X 가 존재합니다.<br>
+                        &nbsp;&nbsp;&nbsp;(1)&nbsp;&nbsp;이 경우 설정-&gt; 네트워크탭에 
+                        다른네트워크주소에 10.10.30 만 입력합니다.<br> &nbsp;&nbsp;&nbsp;(2) 
+                        10.10.20.3과 10.10.20.4 두개만 존재하는 네트워크에 모두 
+                        통신할 필요가 없을 경우<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;또는 
+                        10.10.20의 네트워크 주소의 사용자들 모두에게 나의 대화명을 
+                        알릴 필요없고 C,D컴에만 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;알리길 
+                        원할경우<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red"><img src="img/img51.bmp" width="22" height="26" border="0" alt="[IP]"></font>-&gt; 
+                        10.10.20.3 , 10.10.20.4 &nbsp;두개 주소를 입력 후 [+]버튼을 
+                        누릅니다.<br> &nbsp;&nbsp;&nbsp;(3) 설정을 완료 후 <img src="img/img37s.bmp" width="34" height="26" border="0" alt="[Connection Refresh]">
+                        를 눌러 접속자 검색을 합니다.<br></p>
+                        <p>&nbsp;&nbsp;* 물론 10.10.30 도 다른 네트워크 설정에 
+                        입력해도 됩니다. <br> &nbsp;&nbsp;&nbsp;&nbsp;하지만 
+                        다른 네트워크 검색을 모두 하기 때문에 시간이 많이 걸립니다.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;굳이 10.10.30 네트워크 대에 
+                        통신을 원하는 컴이 적을 경우 IP설정만으로 <br> &nbsp;&nbsp;&nbsp;&nbsp;통신이 
+                        가능하게 됩니다. <br> &nbsp;&nbsp;&nbsp;&nbsp;C,와 D의 
+                        컴에서는 어떻게 해야 할까요?<br> &nbsp;&nbsp;&nbsp;&nbsp;다른 
+                        네트워크에 10.10.10 과 10.10.30을 모두 적으면 되겠죠<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;S들은 10.10.10.X는 다른 네트워크에 
+                        10.10.20.3 과 10.10.20.4는 IP설정에 넣어주면 됩니다.<br></p>
+                        <p>&nbsp;여러분의 LAN설정에 맞게 구성하시기 바랍니다.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="10%" valign="top" class="option" height="45" style="border-top-width:1; border-right-width:1; border-bottom-width:1; border-top-color:rgb(153,153,153); border-right-color:rgb(153,153,153); border-bottom-color:rgb(153,153,153); border-top-style:dotted; border-right-style:dotted; border-bottom-style:dotted;"><b>인터넷은 되는데<br>
+접속자 목록이<br>
+안뜹니다.</b></td>
+                    <td class="descr" width="718" height="45" style="border-top-width:1; border-bottom-width:1; border-left-width:1; border-top-color:rgb(153,153,153); border-bottom-color:rgb(153,153,153); border-left-color:rgb(153,153,153); border-top-style:dotted; border-bottom-style:dotted; border-left-style:dotted;">
+                        <p>&nbsp;<a name="firewall"></a>Window XP 이후 버전부터 윈도우 <font color="red">방화벽</font>을 사용합니다.<br>  &nbsp;방화벽은 &nbsp;프로그램이 네트워크 사용하는 것을 차단합니다.<br>
+ &nbsp;그래서, 메세지 팝업을 사용하려면 방화벽의 개인 네트워크 차단을 해제해야 합니다.<br>                                                                                                                                                                                                                                                &nbsp;기본적으로 처음 메세지팝업을 설치하면 메세지팝업이 실행되면 보안 네트워크 차단 허용창이 뜹니다<br>
+ &nbsp;이때, &nbsp;MsgPopup의 차단해제(XP) 개인네트워크 체크 후&nbsp; 액세스허용(Win10, etc)<br>
+<br>
+만약, &nbsp;첫실행시 해제를 안 해주었다면 통신이 안돼서 사용자목록이 안뜹니다<br>
+해결책) &nbsp;윈도우 제어판 ( 시작-제어판, 윈10경우 시작아이콘 오른클릭-제어판) - 보안센터 (시스템 및 보안)-방화벽<br>
+XP 방화벽-예외 탭- &nbsp;MsgPopup 체크 - 확인 , 목록에 MsgPopup이 없으면 &nbsp;프로그램 추가 클릭해서 MsgPopup 추가<br>
+Win10, Etc &nbsp;방화벽-&nbsp;방화벽에서 앱허용- 설정변경 클릭-MsgPopup &nbsp;이름 개인 &nbsp;공용 체크 -확인<br>
+ &nbsp;&nbsp;(목록에 MsgPopup 없을 시 다른앱 허용클릭- MsgPopup 추가)</p>
+                        <p><br>
+&nbsp;<span style="font-size:12pt;"><a href="http://msgpopup.github.io/xp_fiewall_ko.htm" target="_blank">Windows &nbsp;XP 그림 설명</a><br>
+ &nbsp;&nbsp;<a href="http://msgpopup.github.io/win10_firewall_ko.htm" target="_blank">Windows 10 그림 설명</a></span><br>    </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="10%" valign="top" class="option" height="88" style="border-top-width:1; border-right-width:1; border-top-color:rgb(153,153,153); border-right-color:rgb(153,153,153); border-top-style:dotted; border-right-style:dotted;">
+                        <p><b>랜카드가 <br>두개인 컴퓨터</b></p>
+                    </td>
+                    <td class="descr" width="718" height="176" style="border-top-width:1; border-left-width:1; border-top-color:rgb(153,153,153); border-left-color:rgb(153,153,153); border-top-style:dotted; border-left-style:dotted;">
+                        <p>1. 설정-&gt; 네트워크 탭에서 MY 네트워크로 나오는 
+                        네트워크가 메세지팝업을 사용하려는 네트워크인가요?<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;그렇지 않다면 랜카드 IP와 케이블을 
+                        서로 교체 해보세요.<br> &nbsp;&nbsp;&nbsp;&nbsp;이유는 
+                        컴퓨터가 한개 랜카드를 우선 하는 네트워크로 인식하는데 
+                        이것을 메세지팝업이 이용하기 때문입니다</p>
+                        <p><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;그래서 
+                        바꿀 수 있다면 우선하는 랜카드에서 메세지팝업을 사용하게 
+                        해주면 됩니다.</p>
+                        <p>2. 교체가 불가능하다면 설정-&gt;네트워크 탭에서 
+                        다른네트워크에 My Network에 나오지 않는 다른<br> &nbsp;&nbsp;&nbsp;&nbsp;네트워크 
+                        주소를 입력해 주시고 <img src="img/img37s.bmp" width="34" height="26" border="0" alt="[Connection Refresh]">[접속자&nbsp;갱신] 버튼을 눌러 
+                        주세요</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="10%" height="89" valign="top" class="option" style="border-top-width:1; border-right-width:1; border-top-color:rgb(153,153,153); border-right-color:rgb(153,153,153); border-top-style:dotted; border-right-style:dotted;"><b>Network &nbsp;Port</b></td>
+                    <td width="718" height="89" class="descr" style="border-top-width:1; border-left-width:1; border-top-color:rgb(153,153,153); border-left-color:rgb(153,153,153); border-top-style:dotted; border-left-style:dotted;">
+                        <p>네트워크 관리자라면 &nbsp;통신 장비에 TCP/IP 포트를 통신을 허용해 주어야 합니다<br>
+ &nbsp;TCP port : 6713, 6715 &nbsp;&nbsp;<br>
+ &nbsp;UDP 6711(A group) ~ 6716(F group)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="809" valign="top" class="option" height="20" style="border-top-width:1; border-right-width:1; border-top-color:rgb(153,153,153); border-right-color:rgb(153,153,153); border-top-style:dotted; border-right-style:dotted;" colspan="2">
+                        <p>&nbsp;&nbsp;&nbsp;만약 해결하지 못한 문제나 궁금한 
+                        사항이 있으면 <a href="http://msgpopup.github.io/" target="_blank">메세지팝업 
+                        홈</a>에 들려서 게시판이나 FAQ를 이용하세요</p>
+                    </td>
+                </tr>
+            </table>
+            <p> <font color="#9CCF63">&nbsp;</font><font size="2" color="blue"><span style="font-family:Georgia;"><b>언어 </b></span></font><font color="blue" size="2"><span class="title"><b>지원</b></span></font><b><font color="blue"><a name="Language"></a><br>
+    </font></b><span style="font-family:Georgia;">&nbsp;&nbsp;버전4.0.0은 영어와 한국어를 지원합니다.&nbsp;<br>
+ &nbsp;&nbsp;하지만, 다른 언어로 사용하기를 원한다면, 해당 언어로 번역한 후 저에게 메일( msgpopup@empal.com)을 보내주면 <br>
+ &nbsp;&nbsp;다음버전에 적용할지 검토 후 적용할 수 있습니다&nbsp;<br>
+ &nbsp;&nbsp;버전4.0을 설치하면 설치된 메인폴더에 lang폴더가 있습니다&nbsp;&nbsp;(기본폴더 C:\Program Files\MessagePopup\lang)<br>
+ &nbsp;&nbsp;</span>english.txt &nbsp;를 해당언어.txt로 복사합니다.&nbsp;&nbsp;(예) &nbsp;<span style="font-family:Georgia;">MessagePopup\lang\</span>spanish.txt<br>
+ &nbsp;&nbsp;[언어].txt &nbsp;형식<br>
+&nbsp;&nbsp;&nbsp; 1 행&nbsp;: [0] [1] [2]&nbsp;...&nbsp;이 단어는 고정된 단어로 수정하면 안됩니다. &nbsp;[0] : 내부 메시지&nbsp;&nbsp;[1] : 메인창&nbsp;[2] 알람창&nbsp;....&nbsp;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;2 행&nbsp;: &nbsp;English &nbsp;. &nbsp; Spanish로 변경&nbsp;&nbsp;&nbsp;<br>
+ &nbsp;&nbsp;라인수는 중요합니다. 예) 4행 &nbsp;I am absent now. &nbsp; 해당 행을&nbsp;spanish로 번역합니다. &nbsp;절대 공백이나 &nbsp;삭제하면 안됩니다.<br>
+ &nbsp;( 그래서, 번역작업시 엑셀을 이용하시기 바랍니다. &nbsp;글 모두 복사 후 엑셀에 붙여넣기 후, 번역, 첫칼럼 모두 복사 후<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;spanish.txt 에 덮어서 붙여넣으면 됩니다)<br>
+ &nbsp;&nbsp;메모장에 번역장업후 저장시 인코딩 물으면 &nbsp;ANSI 로 합니다. 다른 인코딩파일은 깨질겁니다<br>
+ &nbsp;&nbsp;번역작업 후, 메시지팝업을 종료후, 재실행 후 설정<img src="img/img35.bmp" width="22" height="26" border="0" alt="[Setup]"> &nbsp;&nbsp;- 언어 탭- 언어 &nbsp;spanish &nbsp;선택<br>
+ &nbsp;&nbsp;해당 언어가 제대로 나오는지 확인합니다..<br>
+<br>
+ &nbsp;이&nbsp;언어&nbsp;번역은&nbsp;MessagePopupII만을 위한 &nbsp;것이고&nbsp;, 설치프로그램 언어와는 무관합니다. &nbsp;<br>
+설치파일 기본언어는 영어이고 &nbsp;한국어만 추가로 선택가능합니다.&nbsp;</p>
+        </td>
+    <td width="9" height="6497"></td>
+    </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
